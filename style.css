@@ -5,10 +5,7 @@ body {
     background-color: black;
     background-size: cover; 
     background-position: center;
-    color: white;
-    
-    display: flex;
-    justify-content: flex-start; /* Alinea los elementos arriba */
+    display: flex:
     align-items: center;
     height: 100vh;
     flex-direction: column;
@@ -17,6 +14,7 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start; 
     gap: 30px; /* Espaciado entre filas */
     color: black;
     text-align: center;
