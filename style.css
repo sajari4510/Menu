@@ -15,15 +15,26 @@ body {
 }
 
 .menu {
-    display: grid;
-    align-items: start; 
-    text-align: center; 
-    width: 100%; /* O ajusta el tamaño según necesites */
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre filas */
     color: white;
+    text-align: center;
 }
+
 .menu-item {
     display: flex;
     align-items: center;
-    gap: 30px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Distribuye los elementos en la fila */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 8px; /* Bordes redondeados */
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño */
+    margin: auto;
+}
+
+.menu-item label, .menu-item input {
+    flex: 1; /* Hace que los elementos se distribuyan equitativamente */
+    text-align: center;
 }
