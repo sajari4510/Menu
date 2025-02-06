@@ -1,16 +1,15 @@
 body {
-    padding-top: 80px;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: black; /* Fondo negro */
     background-size: cover;
     background-position: center;
-    display: flex; /* Corrección: se eliminó el colon extra */
-    align-items: center;
-    height: 100vh;
+    display: flex;
     flex-direction: column;
+    height: 100vh;
 }
+
 .logo {
     display: flex;
     justify-content: space-between; /* Alinea los elementos de izquierda a derecha */
@@ -19,7 +18,10 @@ body {
     color: white;
     padding: 10px 20px;
     width: 100%;
+    position: fixed; /* Fijado en la parte superior */
+    top: 0;
     z-index: 10; /* Se asegura que esté sobre otros elementos */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
 .logo img {
@@ -61,14 +63,16 @@ body {
 .contact-toggle:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
 }
-.title{
-     margin-top: 20px;
-}
-.menu {
+
+.title {
     margin-top: 20px;
+}
+
+.menu {
+    margin-top: 80px; /* Ajusta el margen superior para que no quede cubierto por el logo */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 20px; /* Espaciado entre filas */
     color: black;
     text-align: center;
@@ -76,6 +80,7 @@ body {
     padding: 30px;
     border-radius: 10px;
 }
+
 .menu-item {
     display: flex;
     align-items: center;
@@ -92,7 +97,8 @@ body {
     flex: 1; /* Hace que los elementos se distribuyan equitativamente */
     text-align: center;
 }
-.buybtn{
+
+.buybtn {
     background-color: black;
     color: white;
     padding: 20px 30px;
