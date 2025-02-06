@@ -8,11 +8,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    box-sizing: border-box; /* Para que el padding no interfiera con el tamaño */
 }
 
 .logo {
     display: flex;
-    justify-content: space-between; /* Alinea los elementos de izquierda a derecha */
+    justify-content: space-between;
     align-items: center;
     background-color: black; /* Fondo negro para el logo */
     color: white;
@@ -31,10 +32,10 @@ body {
 
 /* Estilo para el menú de contactos */
 .contact-menu {
-    display: none; /* Oculto por defecto */
-    background-color: rgb(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    display: none;
+    background-color: rgb(0, 0, 0, 0.7);
     position: absolute;
-    top: 40px; /* Justo debajo de la barra */
+    top: 40px;
     left: 0;
     padding: 10px;
     width: 150px;
@@ -61,7 +62,7 @@ body {
 }
 
 .contact-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .title {
@@ -73,32 +74,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px; /* Espaciado entre filas */
+    gap: 20px;
     color: black;
     text-align: center;
-    background-color: rgb(255, 195, 0); /* Usando RGB directamente */
+    background-color: rgb(255, 195, 0);
     padding: 30px;
     border-radius: 10px;
-    width: 80%; /* Ajusta el ancho del menú para que no cubra toda la pantalla */
+    width: 100%; /* Asegura que el menú ocupe el 100% del ancho */
     max-width: 800px; /* Limita el tamaño máximo */
     margin-left: auto; /* Centra el menú */
     margin-right: auto;
+    position: relative; /* Para evitar que el menú se sobreponga */
 }
 
 .menu-item {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuye los elementos en la fila */
-    background-color: rgba(218, 206, 140, 0.5); /* Fondo semi-transparente */
+    justify-content: space-between;
+    background-color: rgba(218, 206, 140, 0.5);
     padding: 8px;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px;
     width: 100%;
-    max-width: 500px; /* Ajusta el tamaño */
+    max-width: 500px;
     margin: auto;
 }
 
 .menu-item label, .menu-item input {
-    flex: 1; /* Hace que los elementos se distribuyan equitativamente */
+    flex: 1;
     text-align: center;
 }
 
