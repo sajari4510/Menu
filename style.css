@@ -3,10 +3,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
-    background-size: cover; 
+    background-color: black; /* Fondo negro */
+    background-size: cover;
     background-position: center;
-    display: flex:
+    display: flex; /* Corrección: se eliminó el colon extra */
     align-items: center;
     height: 100vh;
     flex-direction: column;
