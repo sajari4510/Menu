@@ -101,7 +101,7 @@
     console.log('Función showOrder llamada'); // Esto te ayudará a verificar si se está ejecutando la función
     let orderMessage = "Detalles de la Orden:<br>";
     for (let i = 1; i <= 9; i++) {
-        let qty = document.querySelector(`#food${i}`).value;
+        let qty = document.querySelector(`food${i}`).value; // aqui habia un #
         if (qty > 0) {
             orderMessage += `Comida ${i}: ${qty} <br>`;
         }
