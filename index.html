@@ -97,18 +97,18 @@
     }
 
     // Función para mostrar el popup con los detalles de la orden
-    function showOrder() {
-        let orderMessage = "Detalles de la Orden:<br>";
-        
-        // Obtenemos las cantidades de las comidas
-        for (let i = 1; i <= 10; i++) {
-            let qty = document.querySelector(`#food${i}`).value; // Usamos el id específico
-
-            // Si la cantidad es mayor que 0, lo agregamos al mensaje
-            if (qty > 0) {
-                orderMessage += `Comida ${i}: ${qty} <br>`;
-            }
+   function showOrder() {
+    console.log('Función showOrder llamada'); // Esto te ayudará a verificar si se está ejecutando la función
+    let orderMessage = "Detalles de la Orden:<br>";
+    for (let i = 1; i <= 9; i++) {
+        let qty = document.querySelector(`#food${i}`).value;
+        if (qty > 0) {
+            orderMessage += `Comida ${i}: ${qty} <br>`;
         }
+    }
+    document.getElementById('orderDetails').innerHTML = orderMessage;
+    document.getElementById('orderPopup').style.display = 'flex';
+}
         
         // Mostramos los detalles en el popup
         document.getElementById('orderDetails').innerHTML = orderMessage;
