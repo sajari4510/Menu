@@ -53,7 +53,7 @@
     <input type="number" id="food5" name="cantidad" min="0" max="100" value="0">
 </div>
         <div class="menu-item">
-    <label for="food1">Food 6</label>
+    <label for="food6">Food 6</label>
     <label for="price6">Price</label>
     <label for="cantidad6">Amount</label>
     <input type="number" id="food6" name="cantidad" min="0" max="100" value="0">
@@ -101,7 +101,7 @@
     console.log('Función showOrder llamada'); // Esto te ayudará a verificar si se está ejecutando la función
     let orderMessage = "Detalles de la Orden:<br>";
     for (let i = 1; i <= 9; i++) {
-        let qty = document.querySelector(`food4`).value; // aqui habia un # `#food${i}`
+        let qty = document.querySelector(`#food${i}`).value; // Asegurarse de usar el ID correctamente
         if (qty > 0) {
             orderMessage += `Comida ${i}: ${qty} <br>`;
         }
@@ -109,13 +109,6 @@
     document.getElementById('orderDetails').innerHTML = orderMessage;
     document.getElementById('orderPopup').style.display = 'flex';
 }
-        
-        // Mostramos los detalles en el popup
-        document.getElementById('orderDetails').innerHTML = orderMessage;
-
-        // Mostramos el popup
-        document.getElementById('orderPopup').style.display = 'flex';
-    }
 
     // Función para cerrar el popup
     function closePopup() {
@@ -124,5 +117,6 @@
 
     // Asignar el evento al botón de compra
     document.querySelector(".buybtn").addEventListener("click", showOrder);
-  </script>
+</script>
 </body>
+</html>
