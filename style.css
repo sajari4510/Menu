@@ -18,10 +18,8 @@ body {
     background-color: rgb(255, 195, 0); /* Fondo RGB */
     color: white;
     padding: 10px 20px;
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 1000; /* Se asegura que esté sobre otros elementos */
+    z-index: 10; /* Se asegura que esté sobre otros elementos */
 }
 
 .logo img {
