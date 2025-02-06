@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between; /* Alinea los elementos de izquierda a derecha */
     align-items: center;
-    background-color: rgb(255, 195, 0); /* Fondo RGB */
+    background-color: black; /* Fondo negro para el logo */
     color: white;
     padding: 10px 20px;
     width: 100%; /* Ocupa todo el ancho */
@@ -69,7 +69,7 @@ body {
 }
 
 .menu {
-    margin-top: 80px; /* Ajusta el margen superior para que no quede cubierto por el logo */
+    margin-top: 120px; /* Ajusta el margen superior para que no quede cubierto por el logo */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -79,6 +79,10 @@ body {
     background-color: rgb(255, 195, 0); /* Usando RGB directamente */
     padding: 30px;
     border-radius: 10px;
+    width: 80%; /* Ajusta el ancho del menú para que no cubra toda la pantalla */
+    max-width: 800px; /* Limita el tamaño máximo */
+    margin-left: auto; /* Centra el menú */
+    margin-right: auto;
 }
 
 .menu-item {
@@ -106,3 +110,4 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
