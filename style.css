@@ -41,6 +41,8 @@ body {
     width: 150px;
     text-align: center;
     border-radius: 5px;
+    z-index: 20; /* Asegura que el menú esté sobre otros elementos */
+    box-sizing: border-box;
 }
 
 .contact-menu a {
