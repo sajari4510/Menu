@@ -5,15 +5,19 @@ body {
     background-color: black;
     background-size: cover; 
     background-position: center;
-    color: black;
+    color: white;
+    
     display: flex;
-    justify-content: center;
-    align-items: cener;
+    justify-content: flex-start; /* Alinea los elementos arriba */
+    align-items: center;
     height: 100vh;
     flex-direction: column;
 }
+
 .menu {
     display: grid;
-    align-items: start;
-    color: white;
+    align-items: start; 
+    text-align: center; 
+    width: 100%; /* O ajusta el tamaño según necesites */
+    padding: 20px;
 }
