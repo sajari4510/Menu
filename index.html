@@ -77,21 +77,20 @@
     <input type="number" id="food9" name="cantidad" min="0" max="100" value="0">
 </div>
         
-    <button class="buybtn">Buy</button>
-</div>
-    <div class= "contact">
-      
+        <button class="buybtn">Buy</button>
     </div>
+
     <div id="orderPopup" class="order-popup">
-    <div class="popup-content">
+      <div class="popup-content">
         <h2>Detalles de la Orden</h2>
         <div id="orderDetails"></div>
         <button onclick="closePopup()">Cerrar</button>
+      </div>
     </div>
-</div>
   </div>
-  <script>
-    // Función para mostrar u ocultar el menú de contactos
+
+<script>
+  // Función para mostrar u ocultar el menú de contactos
     function toggleMenu() {
         var menu = document.getElementById('contactMenu');
         menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
@@ -103,8 +102,8 @@
         
         // Obtenemos las cantidades de las comidas
         for (let i = 1; i <= 10; i++) {
-            let qty = document.querySelector(`input[name="cantidad"][id="food${i}"]`).value;
-            
+            let qty = document.querySelector(`#food${i}`).value; // Usamos el id específico
+
             // Si la cantidad es mayor que 0, lo agregamos al mensaje
             if (qty > 0) {
                 orderMessage += `Comida ${i}: ${qty} <br>`;
