@@ -31,41 +31,43 @@ body {
 }
 
 /* Estilo para el menú de contactos */
-/* Estilo para el menú de contactos */
 .contact-menu {
     display: none; /* Inicialmente oculto */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro para mejor contraste */
     position: absolute;
     top: 50px; /* Ajustado para no estar pegado al logo */
     left: 0;
-    padding: 15px;
-    width: 200px;
+    padding: 20px;
+    width: 220px;
     text-align: left;
     border-radius: 8px;
     z-index: 1000;
     box-sizing: border-box;
     color: white;
     font-family: 'Arial', sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para un efecto elevado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
     opacity: 0; /* Inicialmente invisible */
     transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
 }
+
+/* Estilo para los enlaces del menú de contactos */
 .contact-menu a {
     display: block; /* Hace que los enlaces ocupen todo el ancho */
-    padding: 10px;
-    margin: 5px 0;
+    padding: 12px 20px;
+    margin: 8px 0;
     text-decoration: none;
-    color: #fff;
+    color: #e0e0e0; /* Color gris claro */
     font-size: 16px;
-    transition: background-color 0.3s, padding-left 0.3s; /* Transición suave al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s, padding-left 0.3s; /* Efectos suaves */
 }
 
 /* Efecto al pasar el mouse sobre los enlaces */
 .contact-menu a:hover {
     background-color: #007bff; /* Azul brillante al pasar el mouse */
-    padding-left: 10px; /* Desplazamiento sutil hacia la izquierda */
+    color: white; /* Color blanco para texto al pasar el mouse */
+    padding-left: 15px; /* Desplazamiento más notorio hacia la izquierda */
 }
-
 
 /* Estilo para el botón que activa el menú */
 .contact-toggle {
