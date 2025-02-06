@@ -33,7 +33,7 @@ body {
 /* Estilo para el menú de contactos */
 .contact-menu {
     display: none; /* Inicialmente oculto */
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(100, 100, 100, 0.5);
     position: absolute; /* Posicionamiento relativo al contenedor */
     top: 40px;
     left: 0;
@@ -43,6 +43,7 @@ body {
     border-radius: 5px;
     z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
     box-sizing: border-box;
+    color: white;
 }
 
 /* Estilo para el botón que activa el menú */
@@ -55,6 +56,7 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s;
     z-index: 1010; /* Asegura que el botón esté por encima del menú */
+    
 }
 
 .contact-toggle:hover {
