@@ -33,7 +33,7 @@ body {
 /* Estilo para el menú de contactos */
 .contact-menu {
     display: none; /* Inicialmente oculto */
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro para mejor contraste */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más transparente para mejorar visibilidad */
     position: absolute;
     top: 50px; /* Ajustado para no estar pegado al logo */
     left: 0;
@@ -46,7 +46,7 @@ body {
     color: white;
     font-family: 'Arial', sans-serif;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
-    opacity: 0; /* Inicialmente invisible */
+    opacity: 1; /* Hacerlo visible por defecto */
     transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
 }
 
@@ -68,7 +68,6 @@ body {
     color: white; /* Color blanco para texto al pasar el mouse */
     padding-left: 15px; /* Desplazamiento más notorio hacia la izquierda */
 }
-
 /* Estilo para el botón que activa el menú */
 .contact-toggle {
     cursor: pointer;
