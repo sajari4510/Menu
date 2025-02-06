@@ -62,6 +62,9 @@ body {
 .contact-toggle:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
 }
+.title{
+     margin-top: 20px;
+}
 .menu {
     margin-top: 100px;
     display: flex;
