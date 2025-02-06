@@ -38,3 +38,11 @@ body {
     flex: 1; /* Hace que los elementos se distribuyan equitativamente */
     text-align: center;
 }
+.buybtn{
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
