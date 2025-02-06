@@ -10,7 +10,58 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+.logo {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos de izquierda a derecha */
+    align-items: center;
+    background-color: rgb(255, 195, 0); /* Fondo RGB */
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Se asegura que esté sobre otros elementos */
+}
 
+.logo img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo para el menú de contactos */
+.contact-menu {
+    display: none; /* Oculto por defecto */
+    background-color: rgb(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    position: absolute;
+    top: 40px; /* Justo debajo de la barra */
+    left: 0;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contact-menu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Estilos para el enlace de contactos */
+.contact-toggle {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
+}
 .menu {
     display: flex;
     flex-direction: column;
