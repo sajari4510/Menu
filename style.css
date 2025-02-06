@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distribuye los elementos en la fila */
-    background-color: rgba(218, 206, 140 0.5); /* Fondo semi-transparente */
+    background-color: rgba(218, 206, 140, 0.5); /* Fondo semi-transparente */
     padding: 10px;
     border-radius: 8px; /* Bordes redondeados */
     width: 100%;
