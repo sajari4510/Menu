@@ -32,27 +32,20 @@ body {
 
 /* Estilo para el menú de contactos */
 .contact-menu {
-    display: none;
+    display: none; /* Inicialmente oculto */
     background-color: rgb(0, 0, 0, 0.7);
-    position: absolute;
+    position: absolute; /* Posicionamiento relativo al contenedor */
     top: 40px;
     left: 0;
     padding: 10px;
     width: 150px;
     text-align: center;
     border-radius: 5px;
-    z-index: 20; /* Asegura que el menú esté sobre otros elementos */
+    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
     box-sizing: border-box;
 }
 
-.contact-menu a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-
-/* Estilos para el enlace de contactos */
+/* Estilo para el botón que activa el menú */
 .contact-toggle {
     cursor: pointer;
     padding: 10px;
@@ -61,10 +54,16 @@ body {
     border: 1px solid transparent;
     border-radius: 5px;
     transition: background-color 0.3s;
+    z-index: 1010; /* Asegura que el botón esté por encima del menú */
 }
 
 .contact-toggle:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Asegúrate de que el menú se muestre al añadir la clase 'show' */
+.contact-menu.show {
+    display: block; /* Muestra el menú cuando tiene la clase 'show' */
 }
 
 .title {
