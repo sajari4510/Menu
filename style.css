@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between; /* Alinea los elementos de izquierda a derecha */
     align-items: center;
-    background-color: rgb(255, 195, 0); /* Fondo RGB */
+    background-color: rgb(255, 255, 255); /* Fondo RGB */
     color: white;
     padding: 10px 20px;
     width: 100%; /* Ocupa todo el ancho */
