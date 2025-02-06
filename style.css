@@ -31,20 +31,41 @@ body {
 }
 
 /* Estilo para el menú de contactos */
+/* Estilo para el menú de contactos */
 .contact-menu {
     display: none; /* Inicialmente oculto */
-    background-color: rgb(100, 100, 100, 0.5);
-    position: absolute; /* Posicionamiento relativo al contenedor */
-    top: 40px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    position: absolute;
+    top: 50px; /* Ajustado para no estar pegado al logo */
     left: 0;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-    border-radius: 5px;
-    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+    padding: 15px;
+    width: 200px;
+    text-align: left;
+    border-radius: 8px;
+    z-index: 1000;
     box-sizing: border-box;
     color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para un efecto elevado */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave al mostrar/ocultar */
 }
+.contact-menu a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho */
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s, padding-left 0.3s; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.contact-menu a:hover {
+    background-color: #007bff; /* Azul brillante al pasar el mouse */
+    padding-left: 10px; /* Desplazamiento sutil hacia la izquierda */
+}
+
 
 /* Estilo para el botón que activa el menú */
 .contact-toggle {
