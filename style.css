@@ -20,7 +20,7 @@ body {
     gap: 30px; /* Espaciado entre filas */
     color: white;
     text-align: center;
-    background-color: rgb(255, 195, 0, 0.5); /* Usando RGB directamente */
+    background-color: rgba(255, 195, 0, 0.5); /* Usando RGB directamente */
     padding: 20px;
     border-radius: 10px;
 }
