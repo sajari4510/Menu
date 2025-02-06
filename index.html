@@ -20,13 +20,6 @@
     <a href="#">Contacto 3</a>
     <a href="#">Contacto 4</a>
   </div>
-      <script>
-    // Función para mostrar u ocultar el menú de contactos
-    function toggleMenu() {
-        var menu = document.getElementById('contactMenu');
-        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
     <div class="menu">
     <h1 class="title">Menu</h1>
   <div class="menu-item">
@@ -97,5 +90,40 @@
     </div>
 </div>
   </div>
-  
+  <script>
+    // Función para mostrar u ocultar el menú de contactos
+    function toggleMenu() {
+        var menu = document.getElementById('contactMenu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Función para mostrar el popup con los detalles de la orden
+    function showOrder() {
+        let orderMessage = "Detalles de la Orden:<br>";
+        
+        // Obtenemos las cantidades de las comidas
+        for (let i = 1; i <= 10; i++) {
+            let qty = document.querySelector(`input[name="cantidad"][id="food${i}"]`).value;
+            
+            // Si la cantidad es mayor que 0, lo agregamos al mensaje
+            if (qty > 0) {
+                orderMessage += `Comida ${i}: ${qty} <br>`;
+            }
+        }
+        
+        // Mostramos los detalles en el popup
+        document.getElementById('orderDetails').innerHTML = orderMessage;
+
+        // Mostramos el popup
+        document.getElementById('orderPopup').style.display = 'flex';
+    }
+
+    // Función para cerrar el popup
+    function closePopup() {
+        document.getElementById('orderPopup').style.display = 'none';
+    }
+
+    // Asignar el evento al botón de compra
+    document.querySelector(".buybtn").addEventListener("click", showOrder);
+  </script>
 </body>
