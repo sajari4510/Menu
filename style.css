@@ -17,11 +17,11 @@ body {
     background-color: rgb(255, 195, 0); /* Fondo RGB */
     color: white;
     padding: 10px 20px;
-    width: 100%;
+    width: 100%; /* Ocupa todo el ancho */
     position: fixed; /* Fijado en la parte superior */
     top: 0;
     z-index: 10; /* Se asegura que esté sobre otros elementos */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
 }
 
 .logo img {
