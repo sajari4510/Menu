@@ -8,10 +8,12 @@ body {
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: cener;
     height: 100vh;
     flex-direction: column;
 }
 .menu {
+    display: grid;
+    align-items: start;
     color: white;
 }
