@@ -8,9 +8,25 @@
 </head>
 <body>
   <div class="container"> 
-    <div class="logo">
-      
-    </div> 
+   <div class="logo">
+    <div class="contact-toggle" onclick="toggleMenu()">Contactos</div>
+    <img src="hamburguesa-logo.png" alt="Logo de hamburguesa">
+  </div>
+
+  <!-- Menú de contactos desplegable -->
+  <div class="contact-menu" id="contactMenu">
+    <a href="#">Contacto 1</a>
+    <a href="#">Contacto 2</a>
+    <a href="#">Contacto 3</a>
+    <a href="#">Contacto 4</a>
+  </div>
+      <script>
+    // Función para mostrar u ocultar el menú de contactos
+    function toggleMenu() {
+        var menu = document.getElementById('contactMenu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
     <div class="menu">
     <h1 class="title">Menu</h1>
     
