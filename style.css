@@ -69,11 +69,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    gap: 30px; /* Espaciado entre filas */
+    gap: 20px; /* Espaciado entre filas */
     color: black;
     text-align: center;
     background-color: rgb(255, 195, 0); /* Usando RGB directamente */
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
 }
 .menu-item {
@@ -81,10 +81,10 @@ body {
     align-items: center;
     justify-content: space-between; /* Distribuye los elementos en la fila */
     background-color: rgba(218, 206, 140, 0.5); /* Fondo semi-transparente */
-    padding: 10px;
+    padding: 8px;
     border-radius: 8px; /* Bordes redondeados */
     width: 100%;
-    max-width: 600px; /* Ajusta el tamaño */
+    max-width: 500px; /* Ajusta el tamaño */
     margin: auto;
 }
 
